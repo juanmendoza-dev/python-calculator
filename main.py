@@ -9,7 +9,8 @@ num2 = input (int("Secound number: ")) #prompts user for the sec number
 #number logic (magic)
 if sign == "+":
     print("sum:" + num1 + num2)
-elif ("-"):
+elif (sign == "-"):
     print("diffrence:" + num1 - num2)
+elif (sign == "*")
 
     
