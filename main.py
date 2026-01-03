@@ -25,6 +25,8 @@ else:
     #TODO: add auto refresh (after a 2-3 secs make the page reset back the first prompt)
     #TODO: add memory system! (make the user be able to go back to previous outputs)
     #TODO: add settings launcher for the user to able adjust things like: auto refresh time, if they want sys memory or na.
-    
+    #TODO: make the calculator launch on a cmd/terminal window 
+    #TODO: Advanced styling (RGB Animations for intro and other parts of the calculator)
+    #TODO: Make logo for calculator and make it more professional looking such as a official exe file.
 
     
