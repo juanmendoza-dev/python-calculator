@@ -1,7 +1,7 @@
 from colorama import Fore 
 
 #calculator launch 
-print("Thank you for using my calculator! I will try to update it with new features ")
+print(Fore.LIGHTMAGENTA_EX + "Thank you for using my calculator! I will try to update it with new features ")
 
 
 num1 =  input("First number: ") #prompts user for the first number
@@ -22,6 +22,6 @@ else:
 
 
     #TODO: add colors
-    #TODO: Get the launcher working
+    #TODO: Correctly adjust colors!
 
     
