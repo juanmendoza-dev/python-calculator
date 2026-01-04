@@ -1,24 +1,29 @@
 from colorama import Fore 
 
 #calculator launch 
-print(Fore.LIGHTMAGENTA_EX + "Thank you for using my calculator! I will try to update it with new features ")
+print(Fore.LIGHTMAGENTA_EX + "Thank you for using my calculator! I will try to update it with new features!")
+print(Fore.LIGHTMAGENTA_EX) + 'Feel free to press "P" to quit!' 
 
 
-num1 =  int(input(Fore.LIGHTBLUE_EX + "First number: ")) #prompts user for the first number
-sign = input(Fore.LIGHTYELLOW_EX + "sign (eg: + | - | * | /): ") #prompts the user for the sign 
-num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number 
+def mainLauncher():
+    num1 =  int(input(Fore.LIGHTBLUE_EX + "First number: ")) #prompts user for the first number
+    sign = input(Fore.LIGHTYELLOW_EX + "sign (eg: + | - | * | /): ") #prompts the user for the sign 
+    num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number 
 
 #number logic (magic)
-if sign == "+":
-    print(f"{Fore.LIGHTGREEN_EX}Sum: {num1 + num2}")
-elif (sign == "-"):
-    print(f"{Fore.LIGHTGREEN_EX}Difference: {num1 - num2}")
-elif (sign == "*"):
-    print(f"{Fore.LIGHTGREEN_EX}Product: {num1 * num2}")
-elif(sign == "/"):
-    print(f"{Fore.LIGHTGREEN_EX}Quotient: {num1 / num2}")
-else:
-    print(Fore.LIGHTRED_EX + "invalid! Please try again!")
+    if sign == "+":
+        print(f"{Fore.LIGHTGREEN_EX}Sum: {num1 + num2}")
+    elif (sign == "-"):
+        print(f"{Fore.LIGHTGREEN_EX}Difference: {num1 - num2}")
+    elif (sign == "*"):
+        print(f"{Fore.LIGHTGREEN_EX}Product: {num1 * num2}")
+    elif(sign == "/"):
+        print(f"{Fore.LIGHTGREEN_EX}Quotient: {num1 / num2}")
+    else:
+        print(Fore.LIGHTRED_EX + "invalid! Please try again!")   
+
+#launcher 
+mainLauncher()
 
 
     #planned updates!
