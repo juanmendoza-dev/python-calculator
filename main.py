@@ -10,9 +10,9 @@ def mainLauncher():
         num1 =  input(Fore.LIGHTBLUE_EX + "First number: ") #prompts user for the first number
 
         if num1 == "e": 
-            break
+            break       #kicks the user out from calcualtor
         
-        num1 = int(num1)
+        num1 = int(num1) #converts num1 back into a integer  (string -------> int)
         sign = input(Fore.LIGHTYELLOW_EX + "sign (+ | - | * | /): ") #prompts the user for the sign 
         num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number
      
