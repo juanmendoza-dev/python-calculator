@@ -9,7 +9,7 @@ def mainLauncher():
     while True:
         num1 =  input(Fore.LIGHTBLUE_EX + "First number: ") #prompts user for the first number
 
-        if num1 == "e": 
+        if num1.lower() == "e":  #.lower() allows the user to input capital or lower
             break       #kicks the user out from calcualtor
         
         num1 = int(num1) #converts num1 back into a integer  (string -------> int)
