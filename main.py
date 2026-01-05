@@ -16,6 +16,8 @@ def mainLauncher():
             num1 = int(0)
         elif num2.lower() == " ":                   
             num2 = int(0)
+        else:
+            print("invalid number please try again")
 
         
         num1 = int(num1) #converts num1 back into a integer  (string -------> int)
@@ -46,7 +48,7 @@ mainLauncher() #launches calculator
 print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please star on github!")
 
     #planned updates!
-    #TODO: fix error: user puts space instead of number
+    #TODO: fix user putting in random letter instead of number (checks)
     #TODO: add settings launcher for the user to able adjust things like: auto refresh time, if they want sys memory or na.
     #TODO: add performance mode (delayed refresh, anti spam)
     #TODO: make the calculator launch on a cmd/terminal window 
