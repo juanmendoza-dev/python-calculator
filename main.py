@@ -8,11 +8,13 @@ print(Fore.LIGHTMAGENTA_EX + 'Feel free to press "E" to exit!')
 def mainLauncher():
     num1 = 0 #placeholder (do python knows what im referring to) 
     while not num1 == "e":
-        num1 =  int(input(Fore.LIGHTBLUE_EX + "First number: ")) #prompts user for the first number
+        num1 =  input(Fore.LIGHTBLUE_EX + "First number: ") #prompts user for the first number
         sign = input(Fore.LIGHTYELLOW_EX + "sign (+ | - | * | /): ") #prompts the user for the sign 
         num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number
      
     
+
+
 #number logic (magic)
         if sign == "+":
             print(f"{Fore.LIGHTGREEN_EX}Sum: {num1 + num2}")
@@ -31,7 +33,7 @@ def mainLauncher():
 
 #launcher 
 mainLauncher() #launches calculator 
-
+print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please star on github!")
 
 
     #planned updates!
