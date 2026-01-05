@@ -9,8 +9,14 @@ def mainLauncher():
     while True:
         num1 =  input(Fore.LIGHTBLUE_EX + "First number: ") #prompts user for the first number
 
-        if num1.lower() == "e":  #.lower() allows the user to input capital or lower
-            break       #kicks the user out from calcualtor
+        #checks before number logic 
+        if num1.lower() == "e":                     
+            break                                   #kicks the user out from calcualtor
+        elif num1.lower() == " ":                   #checks for spaces
+            num1 = int(0)
+        elif num2.lower() == " ":                   
+            num2 = int(0)
+
         
         num1 = int(num1) #converts num1 back into a integer  (string -------> int)
         sign = input(Fore.LIGHTYELLOW_EX + "sign (+ | - | * | /): ") #prompts the user for the sign 
@@ -40,7 +46,6 @@ mainLauncher() #launches calculator
 print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please star on github!")
 
     #planned updates!
-    #TODO: make a system where the user can exit (quit)
     #TODO: fix error: user puts space instead of number
     #TODO: add settings launcher for the user to able adjust things like: auto refresh time, if they want sys memory or na.
     #TODO: add performance mode (delayed refresh, anti spam)
