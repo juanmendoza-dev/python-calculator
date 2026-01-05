@@ -6,9 +6,9 @@ print(Fore.LIGHTMAGENTA_EX + 'Feel free to press "E" to exit!')
 
 
 def mainLauncher():
-    num1 = 0 #placeholder (do python knows what im referring to) 
+    num1 = "placeholder"  
     while not num1 == "e":
-        num1 =  input(Fore.LIGHTBLUE_EX + "First number: ") #prompts user for the first number
+        num1 =  int(input(Fore.LIGHTBLUE_EX + "First number: ")) #prompts user for the first number
         sign = input(Fore.LIGHTYELLOW_EX + "sign (+ | - | * | /): ") #prompts the user for the sign 
         num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number
      
