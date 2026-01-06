@@ -55,5 +55,5 @@ print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please s
 
 
     #messed up things 
-    #BUG:
+    #BUG: if the user enters space as num1 the whole program crashes 
     
