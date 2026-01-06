@@ -9,20 +9,30 @@ def mainLauncher():
     while True:
         num1 =  input(Fore.LIGHTBLUE_EX + "First number: ") #prompts user for the first number
         clean_num1 = num1.strip()
-        
-            
+              
         #checks before number logic 
         if clean_num1.lower() == "e":                     
             break                               #kicks the user out from calcualtor
         
-
+        #checks
+        if clean_num1 == (""):
+            print(Fore.LIGHTRED_EX + "number can't be blank!!")
+            continue
             
         
         num1 = int(clean_num1) #converts num1 back into a integer  (string -------> int)
+        
+        #sign logic + check 
         sign = input(Fore.LIGHTYELLOW_EX + "sign (+ | - | * | /): ") #prompts the user for the sign 
+        if sign == (""):
+            print(Fore.LIGHTRED_EX +"sign can't be blank")
+            continue
+        
+        #num2 logic + check 
         num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number
-     
-
+        if num2 == (""):
+            print(Fore.LIGHTRED_EX + "number can't be blank!!")
+            continue
 
 #number logic (magic)
         if sign == "+":
