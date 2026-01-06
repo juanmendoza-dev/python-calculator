@@ -8,19 +8,17 @@ print(Fore.LIGHTMAGENTA_EX + 'Feel free to press "E" to exit!')
 def mainLauncher():
     while True:
         num1 =  input(Fore.LIGHTBLUE_EX + "First number: ") #prompts user for the first number
-
-        #checks before number logic 
-        if num1.lower() == "e":                     
-            break                                   #kicks the user out from calcualtor
-        elif num1.lower() == " ":                   #checks for spaces
-            num1 = int(0)
-        elif num2.lower() == " ":                   
-            num2 = int(0)
-        else:
-            print("invalid number please try again")
-
+        clean_num1 = num1.strip()
         
-        num1 = int(num1) #converts num1 back into a integer  (string -------> int)
+            
+        #checks before number logic 
+        if clean_num1.lower() == "e":                     
+            break                               #kicks the user out from calcualtor
+        
+
+            
+        
+        num1 = int(clean_num1) #converts num1 back into a integer  (string -------> int)
         sign = input(Fore.LIGHTYELLOW_EX + "sign (+ | - | * | /): ") #prompts the user for the sign 
         num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number
      
@@ -55,4 +53,7 @@ print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please s
     #TODO: Advanced styling (RGB Animations for intro and other parts of the calculator)
     #TODO: Make logo for calculator and make it more professional looking such as a official exe file.
 
+
+    #messed up things 
+    #BUG:
     
