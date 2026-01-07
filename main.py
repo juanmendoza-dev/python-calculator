@@ -1,5 +1,6 @@
 import time
 from colorama import Fore
+from console import cal_console
 
 #calculator launch 
 print(Fore.LIGHTYELLOW_EX + "loading...")
@@ -17,6 +18,10 @@ def mainLauncher():
         if clean_num1.lower() == "e":                     
             break                               #kicks the user out from calcualtor
         
+        if clean_num1.lower() == "console":
+            cal_console()
+            break
+                                                  
         #checks
         if clean_num1 == (""):
             print(Fore.LIGHTRED_EX + "number can't be blank!!")
