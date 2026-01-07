@@ -1,7 +1,16 @@
 import time
 from colorama import Fore
-import main
 
 
 def cal_console():
-    print("the console is under construction!")
+    print(Fore.LIGHTYELLOW_EX + "loading console...")
+    time.sleep(2)
+    print(Fore.LIGHTGREEN_EX + "Console Loaded!")
+    while True:
+        console = input(Fore.LIGHTYELLOW_EX + "Console: ")
+        if console == ("restart"):
+            print(Fore.LIGHTYELLOW_EX + "Restarting...")
+            mainLauncher()
+            break
+
+
