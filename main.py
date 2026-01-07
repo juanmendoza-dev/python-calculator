@@ -2,6 +2,7 @@ import time
 from colorama import Fore
 from console import cal_console
 
+
 #calculator launch 
 print(Fore.LIGHTYELLOW_EX + "loading...")
 time.sleep(2)
@@ -18,7 +19,7 @@ def mainLauncher():
         if clean_num1.lower() == "e" or clean_num1.lower() == "exit":                     
             break                               #kicks the user out from calcualtor
         
-        if clean_num1.lower() == "console":
+        if clean_num1.lower() == "console" or clean_num1 == "cmd": 
             cal_console()
             break
                                                   
