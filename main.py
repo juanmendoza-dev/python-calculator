@@ -15,7 +15,7 @@ def mainLauncher():
         clean_num1 = num1.strip()
               
         #checks before number logic 
-        if clean_num1.lower() == "e":                     
+        if clean_num1.lower() == "e" or clean_num1.lower() == "exit":                     
             break                               #kicks the user out from calcualtor
         
         if clean_num1.lower() == "console":
