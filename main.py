@@ -29,10 +29,15 @@ def mainLauncher():
             continue
         
         #num2 logic + check 
-        num2 = int(input(Fore.LIGHTBLUE_EX +"Second number: ")) #prompts user for the sec number
-        if num2 == (""):
+        num2 = input(Fore.LIGHTBLUE_EX +"Second number: ") #prompts user for the sec number
+        clean_num2 = num2.strip()
+
+        if clean_num2 == (""):
             print(Fore.LIGHTRED_EX + "number can't be blank!!")
             continue
+
+        num2 = int(clean_num2) #did the same thing here as before 
+
 
 #number logic (magic)
         if sign == "+":
