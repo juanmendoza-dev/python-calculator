@@ -1,6 +1,9 @@
-from colorama import Fore 
+import time
+from colorama import Fore
 
 #calculator launch 
+print(Fore.LIGHTYELLOW_EX + "loading...")
+time.sleep(2)
 print(Fore.LIGHTMAGENTA_EX + "Thank you for using my calculator! I will try to update it with new features!")
 print(Fore.LIGHTMAGENTA_EX + 'Feel free to press "E" to exit!')
 
