@@ -19,7 +19,9 @@ def mainLauncher():
         
         #checks
         if clean_num1 == (""):
+            time.sleep(1)
             print(Fore.LIGHTRED_EX + "number can't be blank!!")
+            time.sleep(0.7)
             continue
             
         
@@ -28,7 +30,9 @@ def mainLauncher():
         #sign logic + check 
         sign = input(Fore.LIGHTYELLOW_EX + "sign (+ | - | * | /): ") #prompts the user for the sign 
         if sign == (""):
+            time.sleep(1)
             print(Fore.LIGHTRED_EX +"sign can't be blank")
+            time.sleep(0.7)
             continue
         
         #num2 logic + check 
@@ -36,7 +40,9 @@ def mainLauncher():
         clean_num2 = num2.strip()
 
         if clean_num2 == (""):
+            time.sleep(1)
             print(Fore.LIGHTRED_EX + "number can't be blank!!")
+            time.sleep(0.7)
             continue
 
         num2 = int(clean_num2) #did the same thing here as before 
