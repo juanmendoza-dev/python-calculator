@@ -20,11 +20,13 @@ while True:
     if console == ("restart"):
            console_restart()
     elif (console == "back"):
-           print("still working on this!")
+           print(Fore.LIGHTYELLOW_EX +"returing to calcualtor...")
+           time.sleep(1)
+           print(Fore.LIGHTGREEN_EX + "success!!!!")
+           break
+
     else:
-           print("invalid input!")
-           
-           
+           print(Fore.LIGHTRED_EX + "invalid input!")   
     
     
 
