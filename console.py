@@ -24,23 +24,27 @@ def console_settings():
         time.sleep(1)
         
         print(Fore.LIGHTMAGENTA_EX + "1. In construction (placeholder)")
-        print(Fore.LIGHTMAGENTA_EX + "2. In construction (placeholder)")
+        print(Fore.LIGHTMAGENTA_EX + "2. Back to console")
         print(Fore.LIGHTMAGENTA_EX + "3. Back to calcualtor!")
         setting_choice = input(Fore.LIGHTYELLOW_EX + "What would you like to do?: ")
 
-        # choice logic
+        # choice logic (settings)
         if setting_choice == ("1"):
             print(Fore.LIGHTRED_EX + "currently under construction...")
             continue
         elif (setting_choice == "2"):
-             print(Fore.LIGHTRED_EX + "currently under construction...")
+             print(Fore.LIGHTYELLOW_EX + "Fetching Console...")
+             time.sleep(1)
+             console_logic()
         elif(setting_choice == "3"):
              print(Fore.LIGHTYELLOW_EX + "Loading Calcualtor...")
              time.sleep(2)
-        break
+             break
+             
+        
 
 
-
+#console logic!! brains of the op
 def console_logic():
         while True:
             console = input(Fore.LIGHTYELLOW_EX + "Console: ")
@@ -52,10 +56,14 @@ def console_logic():
                 time.sleep(1)
                 print(Fore.LIGHTGREEN_EX + "success!!!!")
                 break
+            elif (console == "settings"):
+                 console_settings()
+                 break
                 
 
             else:
                 print(Fore.LIGHTRED_EX + "invalid input!")   
+                continue
     
 def go_back():
     return
@@ -70,4 +78,4 @@ go_back()
 
 
 #planned updates
-#TODO: add the restart function
+#TODO: add error if user already in console 
