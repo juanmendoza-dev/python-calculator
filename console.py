@@ -16,23 +16,31 @@ def console_restart():
             print(Fore.LIGHTGREEN_EX +"calcualtor sucessfulley loaded!")
 
 def console_settings():
-      print(Fore.LIGHTYELLOW_EX + "Loading settings... ")
-      print(Fore.LIGHTYELLOW_EX + "The settings UI is currently under construction!")
-      time.sleep(2)
-      print(Fore.LIGHTGREEN_EX + "Settings UI successfully loaded! ")
-      time.sleep(1)
-      
-      print(Fore.LIGHTMAGENTA_EX + "1. In construction (placeholder)")
-      print(Fore.LIGHTMAGENTA_EX + "2. In construction (placeholder)")
-      print(Fore.LIGHTMAGENTA_EX + "3. Back to calcualtor!")
-      setting_choice = input(Fore.LIGHTYELLOW_EX + "What would you like to do?: ")
+      while True:
+        print(Fore.LIGHTYELLOW_EX + "Loading settings... ")
+        print(Fore.LIGHTYELLOW_EX + "The settings UI is currently under construction!")
+        time.sleep(2)
+        print(Fore.LIGHTGREEN_EX + "Settings UI successfully loaded! ")
+        time.sleep(1)
+        
+        print(Fore.LIGHTMAGENTA_EX + "1. In construction (placeholder)")
+        print(Fore.LIGHTMAGENTA_EX + "2. In construction (placeholder)")
+        print(Fore.LIGHTMAGENTA_EX + "3. Back to calcualtor!")
+        setting_choice = input(Fore.LIGHTYELLOW_EX + "What would you like to do?: ")
 
-    #logic 
-      if settings_choice == 
-    
-    
-            
-  
+        # choice logic
+        if setting_choice == ("1"):
+            print(Fore.LIGHTRED_EX + "currently under construction...")
+            continue
+        elif (setting_choice == "2"):
+             print(Fore.LIGHTRED_EX + "currently under construction...")
+        elif(setting_choice == "3"):
+             print(Fore.LIGHTYELLOW_EX + "Loading Calcualtor...")
+             time.sleep(2)
+        break
+
+
+
 def console_logic():
         while True:
             console = input(Fore.LIGHTYELLOW_EX + "Console: ")
