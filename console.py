@@ -83,6 +83,10 @@ def console_logic():
                  break
             elif(console == "help"):
                  super_helper()
+            elif console == "cmd" or console == "console":
+                 print(Fore.LIGHTRED_EX +"already in the console!!")
+                 continue
+
                  
                  
                 

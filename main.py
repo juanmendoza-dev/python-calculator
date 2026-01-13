@@ -86,6 +86,7 @@ print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please s
     #TODO: Make logo for calculator and make it more professional looking such as a official exe file.
 
 
+    #messed up things 
+    #BUG: if the user enters space as num1 the whole program crashes 
     
-
     
