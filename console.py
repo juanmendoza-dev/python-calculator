@@ -40,7 +40,29 @@ def console_settings():
              print(Fore.LIGHTYELLOW_EX + "Loading Calcualtor...")
              time.sleep(2)
              break
-             
+def super_helper():
+     print(Fore.LIGHTMAGENTA_EX + "Sorry you are having issues, Here are all the commands!")
+     print(Fore.LIGHTYELLOW_EX + "Loading...")  
+     time.sleep(1)
+     print(Fore.LIGHTMAGENTA_EX + "Commands:")
+     print(Fore.LIGHTCYAN_EX + "1. Help")     
+     print(Fore.LIGHTCYAN_EX + "2. Console/cmd")     
+     print(Fore.LIGHTCYAN_EX + "3. restart")
+     print(Fore.LIGHTCYAN_EX + "4. back")
+     byebye = input("Y/N: Exit now?")
+
+     if byebye == "y" or byebye == "Y":
+          print(Fore.LIGHTYELLOW_EX + "loading...")
+          console_logic()
+     elif(byebye == "n" or byebye == "Y"):
+          super_helper()
+     else:
+          print(Fore.LIGHTRED_EX + "Invaild Character y/n")
+
+        
+
+
+          
         
 
 
@@ -59,6 +81,10 @@ def console_logic():
             elif (console == "settings"):
                  console_settings()
                  break
+            elif(console == "help"):
+                 super_helper()
+                 
+                 
                 
 
             else:
