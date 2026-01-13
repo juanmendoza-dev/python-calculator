@@ -41,8 +41,8 @@ def console_settings():
              time.sleep(2)
              break
 def super_helper():
+     print(Fore.LIGHTYELLOW_EX + "Loading...") 
      print(Fore.LIGHTMAGENTA_EX + "Sorry you are having issues, Here are all the commands!")
-     print(Fore.LIGHTYELLOW_EX + "Loading...")  
      time.sleep(1)
      print(Fore.LIGHTMAGENTA_EX + "Commands:")
      print(Fore.LIGHTCYAN_EX + "1. Help")     
