@@ -14,6 +14,21 @@ def console_restart():
             print(Fore.LIGHTYELLOW_EX + "-------------------")
             time.sleep(2)
             print(Fore.LIGHTGREEN_EX +"calcualtor sucessfulley loaded!")
+
+def console_settings():
+      print(Fore.LIGHTYELLOW_EX + "Loading settings... ")
+      print(Fore.LIGHTYELLOW_EX + "The settings UI is currently under construction!")
+      time.sleep(2)
+      print(Fore.LIGHTGREEN_EX + "Settings UI successfully loaded! ")
+      time.sleep(1)
+      
+      option1 = input(Fore.LIGHTMAGENTA_EX + "1: options 1! (placeholder)")
+      print(Fore.LIGHTMAGENTA_EX + "1. In construction (placeholder)")
+      print(Fore.LIGHTMAGENTA_EX + "2. In construction (placeholder)")
+      print(Fore.LIGHTMAGENTA_EX + "3. Back to calcualtor!")
+      settings_choice = input(Fore.LIGHTYELLOW_EX + "What would you like to do?: ")
+    
+    
             
   
 def console_logic():
