@@ -28,6 +28,12 @@ def mainLauncher():
             print(Fore.LIGHTRED_EX + "number can't be blank!!")
             time.sleep(0.7)
             continue
+        
+        if clean_num1.isalpha():
+            print(Fore.LIGHTRED_EX + "variables are not accepted in v1!")
+            continue
+    
+        
             
         
         num1 = int(clean_num1) #converts num1 back into a integer  (string -------> int)
