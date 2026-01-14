@@ -63,6 +63,23 @@ def super_helper():
                print(Fore.LIGHTRED_EX + "Invaild Character y/n")
                continue
 
+def settings_helper():
+     while True:
+          print(Fore.LIGHTYELLOW_EX + "fetching user settings...")
+          time.sleep(2)
+          print(Fore.LIGHTGREEN_EX + "Sucess!!")
+          time.sleep(1)
+          print(Fore.LIGHTMAGENTA_EX + "Settings UI")
+          print(Fore.LIGHTMAGENTA_EX + "1.Performance Mode")
+          print(Fore.LIGHTMAGENTA_EX + "2.Fast Math")
+          print(Fore.LIGHTMAGENTA_EX + "3.Kill program ")
+          settings_choice = input(Fore.LIGHTYELLOW_EX + "What would you like to do?: ")
+          
+          if settings_choice == "1" or settings_choice == "Performance mode" or settings_choice == "performance mode":
+               print(Fore.LIGHTYELLOW_EX + "Applying Performance Patch...")
+               time.sleep(2)
+               print(Fore.LIGHTGREEN_EX +"Performance Mode activated!")
+
         
 
 
@@ -90,6 +107,8 @@ def console_logic():
             elif console == "cmd" or console == "console":
                  print(Fore.LIGHTRED_EX +"already in the console!!")
                  continue
+            elif console == "settings" or console == "set":
+                 settings_launcher()
 
                  
                  
