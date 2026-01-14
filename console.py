@@ -41,23 +41,27 @@ def console_settings():
              time.sleep(2)
              break
 def super_helper():
-     print(Fore.LIGHTYELLOW_EX + "Loading...") 
-     print(Fore.LIGHTMAGENTA_EX + "Sorry you are having issues, Here are all the commands!")
-     time.sleep(1)
-     print(Fore.LIGHTMAGENTA_EX + "Commands:")
-     print(Fore.LIGHTCYAN_EX + "1. Help")     
-     print(Fore.LIGHTCYAN_EX + "2. Console/cmd")     
-     print(Fore.LIGHTCYAN_EX + "3. restart")
-     print(Fore.LIGHTCYAN_EX + "4. back")
-     byebye = input("Y/N: Exit now?")
+     while True:
+          print(Fore.LIGHTYELLOW_EX + "Loading...") 
+          print(Fore.LIGHTMAGENTA_EX + "Sorry you are having issues, Here are all the commands!")
+          time.sleep(1)
+          print(Fore.LIGHTMAGENTA_EX + "Commands:")
+          print(Fore.LIGHTCYAN_EX + "1. Help")     
+          print(Fore.LIGHTCYAN_EX + "2. Console/cmd")     
+          print(Fore.LIGHTCYAN_EX + "3. restart")
+          print(Fore.LIGHTCYAN_EX + "4. back")
+          byebye = input("Y/N: Exit now?")
 
-     if byebye == "y" or byebye == "Y":
-          print(Fore.LIGHTYELLOW_EX + "loading...")
-          console_logic()
-     elif(byebye == "n" or byebye == "Y"):
-          super_helper()
-     else:
-          print(Fore.LIGHTRED_EX + "Invaild Character y/n")
+          if byebye == "y" or byebye == "Y":
+               print(Fore.LIGHTYELLOW_EX + "loading...")
+               console_logic()
+               break
+          elif(byebye == "n" or byebye == "N"):
+               super_helper()
+               break
+          else:
+               print(Fore.LIGHTRED_EX + "Invaild Character y/n")
+               continue
 
         
 
