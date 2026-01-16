@@ -1,6 +1,5 @@
 import time
 from colorama import Fore
-
 #console launcher
 def console_launcher():
     print(Fore.LIGHTYELLOW_EX + "loading console...") #2 sec load time for console
@@ -49,7 +48,8 @@ def super_helper():
           print(Fore.LIGHTCYAN_EX + "1. Help")     
           print(Fore.LIGHTCYAN_EX + "2. Console/cmd")     
           print(Fore.LIGHTCYAN_EX + "3. restart")
-          print(Fore.LIGHTCYAN_EX + "4. back")
+          print(Fore.LIGHTCYAN_EX + "4. overclock")
+          print(Fore.LIGHTCYAN_EX + "5. back")
           byebye = input("Y/N: Exit now?")
 
           if byebye == "y" or byebye == "Y":
@@ -59,11 +59,14 @@ def super_helper():
           elif(byebye == "n" or byebye == "N"):
                super_helper()
                break
+          elif (byebye == "overclock" or byebye == "ovrclock"):
+               overclock_settings()
+               break
           else:
                print(Fore.LIGHTRED_EX + "Invaild Character y/n")
                continue
 
-def settings_helper():
+def overclock_settings():
      while True:
           print(Fore.LIGHTYELLOW_EX + "fetching user settings...")
           time.sleep(2)
@@ -74,13 +77,11 @@ def settings_helper():
           print(Fore.LIGHTMAGENTA_EX + "2.Fast Math")
           print(Fore.LIGHTMAGENTA_EX + "3.Kill program ")
           settings_choice = input(Fore.LIGHTYELLOW_EX + "What would you like to do?: ")
-          
+
           if settings_choice == "1" or settings_choice == "Performance mode" or settings_choice == "performance mode":
                print(Fore.LIGHTYELLOW_EX + "Applying Performance Patch...")
                time.sleep(2)
                print(Fore.LIGHTGREEN_EX +"Performance Mode activated!")
-
-        
 
 
           
@@ -107,12 +108,8 @@ def console_logic():
             elif console == "cmd" or console == "console":
                  print(Fore.LIGHTRED_EX +"already in the console!!")
                  continue
-            elif console == "settings" or console == "set":
-                 settings_launcher()
-
-                 
-                 
-                
+            elif console == "overclock" or console == "settings" or console == "over":
+                 overclock_settings()
 
             else:
                 print(Fore.LIGHTRED_EX + "invalid input!")   
