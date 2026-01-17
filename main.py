@@ -28,6 +28,12 @@ def mainLauncher():
             print(Fore.LIGHTRED_EX + "number can't be blank!!")
             time.sleep(0.7)
             continue
+        
+        if clean_num1.isalpha():
+            print(Fore.LIGHTRED_EX + "variables are not accepted in v1!")
+            continue
+    
+        
             
         
         num1 = int(clean_num1) #converts num1 back into a integer  (string -------> int)
@@ -73,7 +79,6 @@ mainLauncher() #launches calculator
 print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please star on github!")
 
     #planned updates!
-    #TODO: fix user putting in random letter instead of number (checks)
     #TODO: add settings launcher for the user to able adjust things like: auto refresh time, if they want sys memory or na.
     #TODO: add performance mode (delayed refresh, anti spam)
     #TODO: make the calculator launch on a cmd/terminal window 
@@ -83,4 +88,5 @@ print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please s
 
     #messed up things 
     #BUG: if the user enters space as num1 the whole program crashes 
+    
     
