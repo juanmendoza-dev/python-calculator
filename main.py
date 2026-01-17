@@ -1,6 +1,6 @@
 import time
 from colorama import Fore
-from console import cal_console
+from console import console_launcher
 
 
 #calculator launch 
@@ -20,8 +20,8 @@ def mainLauncher():
             break                               #kicks the user out from calcualtor
         
         if clean_num1.lower() == "console" or clean_num1 == "cmd": 
-            cal_console()
-            break
+            console_launcher()
+            continue
                                                   
         #checks
         if clean_num1 == (""):
