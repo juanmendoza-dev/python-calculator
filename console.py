@@ -12,8 +12,9 @@ def console_launcher():
 def console_restart():
             print(Fore.LIGHTYELLOW_EX + "Restarting...") #restarts console
             print(Fore.LIGHTYELLOW_EX + "-------------------")
+            print("\n"*50) #prints a bunch of lines (fake restart)
             time.sleep(2)
-            print(Fore.LIGHTGREEN_EX +"calcualtor sucessfulley loaded!")
+            print(Fore.LIGHTGREEN_EX +"calcualtor successfully loaded!")
 
 def console_settings():
       while True:
@@ -60,14 +61,14 @@ def super_helper():
                super_helper()
                break
           else:
-               print(Fore.LIGHTRED_EX + "Invaild Character y/n")
+               print(Fore.LIGHTRED_EX + "Invalid Character y/n")
                continue
 
 def settings_helper():
      while True:
           print(Fore.LIGHTYELLOW_EX + "fetching user settings...")
           time.sleep(2)
-          print(Fore.LIGHTGREEN_EX + "Sucess!!")
+          print(Fore.LIGHTGREEN_EX + "Success!!")
           time.sleep(1)
           print(Fore.LIGHTMAGENTA_EX + "Settings UI")
           print(Fore.LIGHTMAGENTA_EX + "1.Performance Mode")
@@ -107,10 +108,6 @@ def console_logic():
             elif console == "cmd" or console == "console":
                  print(Fore.LIGHTRED_EX +"already in the console!!")
                  continue
-            elif console == "settings" or console == "set":
-                 settings_launcher()
-
-                 
                  
                 
 
