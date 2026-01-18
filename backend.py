@@ -1,5 +1,6 @@
 #BETA VERSION RIGHTNOW! 
 # sorry if its a little bit glitchy 
+#thinking of using this to log activities 
 
 import time 
 from colorama import Fore
