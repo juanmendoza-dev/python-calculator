@@ -12,7 +12,7 @@ def console_launcher():
 def console_restart():
             print(Fore.LIGHTYELLOW_EX + "Restarting...") #restarts console
             print(Fore.LIGHTYELLOW_EX + "-------------------")
-            print("\n"*50) #prints a bunch of lines (fake restart)
+            clear()
             time.sleep(2)
             print(Fore.LIGHTGREEN_EX +"calcualtor successfully loaded!")
 
@@ -83,7 +83,8 @@ def settings_helper():
 
         
 
-
+def clear():
+     print("\n"*50) #prints a bunch of lines (fake restart or clear)
           
         
 
