@@ -81,7 +81,6 @@ print(Fore.LIGHTMAGENTA_EX + "thank you for using my awesome calculator please s
     #planned updates!
     #TODO: add settings launcher for the user to able adjust things like: auto refresh time, if they want sys memory or na.
     #TODO: add performance mode (delayed refresh, anti spam)
-    #TODO: make the calculator launch on a cmd/terminal window 
     #TODO: Advanced styling (RGB Animations for intro and other parts of the calculator)
     #TODO: Make logo for calculator and make it more professional looking such as a official exe file.
 

@@ -50,7 +50,8 @@ def super_helper():
           print(Fore.LIGHTCYAN_EX + "1. Help")     
           print(Fore.LIGHTCYAN_EX + "2. Console/cmd")     
           print(Fore.LIGHTCYAN_EX + "3. restart")
-          print(Fore.LIGHTCYAN_EX + "4. back")
+          print(Fore.LIGHTCYAN_EX + "4. clear")
+          print(Fore.LIGHTCYAN_EX + "5. back")
           byebye = input("Y/N: Exit now?")
 
           if byebye == "y" or byebye == "Y":
@@ -109,6 +110,9 @@ def console_logic():
             elif console == "cmd" or console == "console":
                  print(Fore.LIGHTRED_EX +"already in the console!!")
                  continue
+            elif console == "clear":
+                 clear()
+                 console_launcher()
                  
                 
 
