@@ -11,7 +11,6 @@ def backend_console():
     closed_console = "closed console"
     restarted_console = "restarted console"
     loaded_help = "loaded help"
-    loaded_overlock = "loaded overclock"
     program_killed = "program killed"
     launcher = "launched calcualtor"
 
